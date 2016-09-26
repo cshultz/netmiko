@@ -28,6 +28,7 @@ from netmiko.dell import DellForce10SSH
 from netmiko.paloalto import PaloAltoPanosSSH
 from netmiko.quanta import QuantaMeshSSH
 from netmiko.vyos import VyOSSSH
+from netmiko.netgear import NetgearSSH
 
 # The keys of this dictionary are the supported device_types
 CLASS_MAPPER_BASE = {
@@ -64,6 +65,7 @@ CLASS_MAPPER_BASE = {
     'dell_force10': DellForce10SSH,
     'paloalto_panos': PaloAltoPanosSSH,
     'quanta_mesh': QuantaMeshSSH,
+    'netgear': NetgearSSH,
 }
 
 # Also support keys that end in _ssh
